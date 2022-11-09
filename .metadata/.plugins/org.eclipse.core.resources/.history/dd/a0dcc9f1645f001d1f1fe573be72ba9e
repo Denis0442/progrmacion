@@ -1,0 +1,33 @@
+package tonto;
+
+import java.util.Scanner;
+
+public class Tema4 {
+	public static void main(String[] args) {
+		Scanner teclado = new Scanner(System.in);
+		String frase;
+		boolean mayus;
+		
+		System.out.print("Introduce una texto: ");
+		frase = teclado.nextLine();
+		
+		do {
+			System.out.print("Introduce una texto: ");
+			frase = teclado.nextLine();
+		}while (! frase.equals(frase.toUpperCase()));
+		
+		for(int i =0;i<frase.length();i++) {
+			if (! Character.isLetter(frase.charAt(i))) {
+				mayus = false;
+			}while (mayus = false);
+			
+			String codificado ="";
+			for (int t =0; i<frase.length();t++) {
+				codificado+=frase.charAt(t)+3;
+				
+			}System.out.println("Resultado: "+codificado);
+			
+		}
+		
+	}
+}

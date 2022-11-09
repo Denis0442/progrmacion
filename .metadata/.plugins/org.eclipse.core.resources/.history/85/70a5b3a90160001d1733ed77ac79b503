@@ -1,0 +1,20 @@
+package tonto;
+
+import java.util.Scanner;
+
+public class Tema4Ej9 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String texto;
+		int codigo;
+		
+		do {
+            System.out.print("Introduce un texto: ");
+            texto = sc.nextLine();
+        } while (texto.isEmpty());
+		do {
+            System.out.print("Introduce el código: ");
+            codigo = sc.nextInt();
+        } while (codigo < 1);
+	}
+}

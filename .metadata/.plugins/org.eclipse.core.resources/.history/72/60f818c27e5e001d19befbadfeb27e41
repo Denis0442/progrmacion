@@ -1,0 +1,33 @@
+package tonto;
+
+import java.util.Scanner; 
+
+public class Tema4ej4 {
+	public static void main(String[] args) {
+		Scanner teclado = new Scanner(System.in);
+		String frase;
+		int opcion = 0;
+		
+		System.out.print("Introduce una frase: ");
+		frase=teclado.nextLine();
+		
+		System.out.println("Elige una opcion:"
+				+ "1.Mayusculas"
+				+ "2.Minusculas");
+		
+		switch (opcion) {
+		case 1:
+			System.out.print(frase.toUpperCase());
+			break;
+		case 2:
+			System.out.print(frase.toLowerCase());
+		
+		}
+		
+		if (frase.length()<80) {
+			System.out.print(frase.toUpperCase());
+	
+		}
+		
+	}
+}

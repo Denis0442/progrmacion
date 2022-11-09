@@ -1,0 +1,25 @@
+package tonto;
+
+import java.util.Scanner; 
+
+public class Tema4Ejercicio1 {
+	public static void main(String[] args) {
+		Scanner teclado = new Scanner(System.in);
+		String frase,cuenta;
+		
+		System.out.print("Introduce una frase: ");
+		frase=teclado.next();
+		
+			if(frase.length()<=80) {
+				for (int i=1;i<=frase.length();i++) {
+				cuenta=frase.substring(0,i);
+				System.out.println(cuenta);
+			}
+		}else {
+			System.out.print("Introduce menos de 80 caracteres.");
+		}
+			
+		
+	
+	}
+}

@@ -1,0 +1,27 @@
+package tonto;
+
+import java.util.Scanner;
+
+public class Tema4Ej10 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String codigo;
+		int error = 0;
+		int total = 0;
+		int hombre = 0;
+		int mujer = 0;
+
+		
+		System.out.println("Intro¡¡¡duce tu codigo: ");
+		codigo = sc.nextLine();
+		
+
+				if (codigo.equals('H')) {
+					hombre++;
+				} else if (codigo.equals('M')) {
+					mujer++;
+				}
+				System.out.println(hombre);
+				System.out.println(mujer);
+		}
+}

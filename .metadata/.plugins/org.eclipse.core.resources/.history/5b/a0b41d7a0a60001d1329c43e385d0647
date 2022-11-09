@@ -1,0 +1,39 @@
+package tonto;
+
+import java.util.Scanner;
+
+public class Tema4Ej10 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String codigo;
+		int error = 0;
+		int total = 0;
+		int hombre = 0;
+		int mujer = 0;
+
+		
+		
+		System.out.println("Introduce tu codigo: ");
+		codigo = sc.nextLine();
+		
+
+		
+		if (codigo.length() != 8) {
+			error++;
+		}
+		while (codigo.length() == 8) {
+			for (int i = 0; i < codigo.length(); i++) {
+				if (codigo.indexOf(i) == 'H') {
+					hombre++;
+				} else if (codigo.indexOf(i) == 'M') {
+					mujer++;
+				}
+			}
+			total++;
+		}
+		System.out.println(hombre);
+		System.out.println(mujer);
+		System.out.println(error);
+		System.out.println("Hay " +(total-error)+"codigos correctos");
+	}
+}

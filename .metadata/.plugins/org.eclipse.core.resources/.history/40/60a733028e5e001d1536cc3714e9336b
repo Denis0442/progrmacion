@@ -1,0 +1,36 @@
+package tonto;
+
+import java.util.Scanner;
+
+public class Tema4Ej6 {
+	public static void main(String[] args) {
+		Scanner teclado = new Scanner(System.in);
+
+		String frase;
+		int vocales = 0;
+		int cons = 0;
+		int num=0;
+		System.out.print("Introduce una frase:");
+		frase = teclado.nextLine();
+
+		if (frase.length() < 80) {
+			for (int i = 0; i < frase.length(); i++) {
+				if ((frase.charAt(i) == 'a') || (frase.charAt(i) == 'e') || (frase.charAt(i) == 'i')
+						|| (frase.charAt(i) == 'o') || (frase.charAt(i) == 'u')) {
+					vocales++;
+				}
+				if((frase.charAt(i) == '1') || (frase.charAt(i) == '2') || (frase.charAt(i) == '3')
+						|| (frase.charAt(i) == '4') || (frase.charAt(i) == '5') || (frase.charAt(i) == '6') || (frase.charAt(i) == '7') || (frase.charAt(i) == '8')
+						|| (frase.charAt(i) == '9') || (frase.charAt(i) == '0')) {
+					num++;
+				}else {
+					cons++;
+				}
+
+			}
+			System.out.println("Hay " + vocales + " vocales en la frase.");
+			System.out.println("Hay " +cons+ " consonantes en la frase");
+			System.out.println("Hay " +num+ " numeros en la frase");
+		}
+	}
+}

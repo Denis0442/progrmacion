@@ -1,0 +1,24 @@
+package tonto;
+
+import java.util.Scanner;
+
+public class Tema4Ej5 {
+	public static void main(String[] args) {
+		Scanner teclado = new Scanner(System.in);
+
+		String frase;
+		
+		System.out.print("Introduce una frase: ");
+		frase = teclado.nextLine();
+
+		if (frase.length() < 80) {
+			for (int i = 0; i < frase.length(); i++) {
+				
+				String a= frase.substring(2);
+					
+				}
+			}
+		}
+	}
+}
+
